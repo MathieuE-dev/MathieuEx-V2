@@ -1,0 +1,93 @@
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row{
+    gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education-row .education-column{
+  width: 45%;
+  min-width: 380px;
+}
+
+.education-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    margin : 0 0 1.5rem 2rem;
+}
+
+
+.education-column .education-box{
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+}
+
+.education-box .education-content::before{
+    content: '';
+    top: 0;
+    left: -1.1rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-content .contenu{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.education-content .contenu::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .contenu:hover::before{
+    width: 100%;
+}
+
+.education-content .contenu .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+.education-content .contenu .year i {
+    padding-right: .5rem;
+}
+
+.education-content .contenu h3 {
+    font-size: 2rem;
+}
+.education-content .contenu p {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
