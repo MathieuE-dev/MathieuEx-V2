@@ -373,7 +373,11 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
+<<<<<<< HEAD
     background: url(Waves.png);
+=======
+    background: url(wave.png);
+>>>>>>> da24551faec180bd3562cb157153d26ab79f5ef4
     background-size: 1000px 100px;
 }
 
